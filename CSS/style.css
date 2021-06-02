@@ -1,3 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+a{
+    text-decoration: none; 
+	color: black;
+}
+/*Setup du Header*/
+header{
+    max-width: 100%;
+  margin-right: 45px;
+  margin-left: 45px;
+  margin-top: 0;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 160px);
+  grid-template-areas: "logo hébergements activités sinscrire";
+
+  align-items: center;
+}
+.logo{
+	grid-area: logo;
+}
+.navHébergements{
+	grid-area: hébergements;
+}
+.navActivités{
+	grid-area: activités;
+}
+.sinscrire{
+	grid-area: sinscrire;
+}
+.navHébergements, .navActivités, .sinscrire{
+	border-top: 3px solid white;
+    text-decoration: none;
+	text-align: center;
+    padding-top: 50px;
+	padding-bottom: 35px;
+}
+.sinscrire {
+	color: #0065FC;
+	font-weight: bold;
+}
+.sinscrire:hover{
+	transform: scale(1.05);
+}
+
+.navHébergements:hover, .navActivités:hover {
+	border-top: 3px solid #0065fc;
+	color: #0065fc;
+	font-weight: bold;
 }
