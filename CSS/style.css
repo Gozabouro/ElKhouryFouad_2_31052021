@@ -57,3 +57,175 @@ header{
 	color: #0065fc;
 	font-weight: bold;
 }
+
+/*Setup du footer*/
+footer{
+    width: 100%;
+    background-color: #F2F2F2;
+
+    font-size: 1rem;
+}
+
+.footer-Content{
+    background-color: #F2F2F2;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    padding: 45px;
+}
+.footer-About, .footer-Hébergements, .footerAide{
+	width: 30%;
+	padding-right: 45px;
+}
+footer h2{
+	font-size: 1.1rem;
+	margin-top: 0;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li{
+	font-size: 0.9rem;
+    line-height: 1.8;
+    text-decoration: none;
+}
+footer li:hover {
+	font-weight: bold;
+}
+@media screen and (max-width: 1000px){
+	.footer-About .footer-Hébergements, .footer-Aide{
+		width: fit-content;
+		padding-right: 45px;
+	}
+}
+/**Media Queries for footer**/
+@media screen and (max-width: 768px){
+	.footer-Content{
+		flex-direction: column;
+		padding: 20px;
+	}
+	.footer-About, .footer-Hébergements, .footer-Aide{
+		width: 100%;
+	}
+}
+	
+/*Setup de la barre de recherche et filtres*/
+
+#Search {
+	margin: 0 45px;
+}
+
+#Search h1{
+	margin-bottom: 8px;
+}
+#Search p{
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
+.SearchBar {
+	border: 1px solid #F2F2F2;
+	width: 420px;
+	height: 48px;
+	border-radius: 20px;
+
+	display: inline-flex;
+}
+
+.SearchBar p{
+	margin: 0;
+	border-radius: 15px;
+}
+
+.SearchBar input {
+	height: 100%;
+	flex: auto;
+	border: none;
+	font-weight: bold;
+	color: black;
+	outline: none;
+	padding-left: 10px;
+}
+.boxIconMap i {
+	width: 50px;
+	height: 100%;
+	margin: 0;
+
+	background-color: #F2F2F2;
+	border-radius: 15px 0 0 15px;
+	text-align: center;
+}
+
+.boxIconMap i{
+	height: 18px;
+	width: 18px;
+	margin-top: 14px;
+}
+button {
+    border: 1px #0065FC solid;
+    background-color: #0065FC;
+    color: white;
+    margin-left: -4px;
+    padding: 12px 18px;
+    border-radius: 0 10px 10px 0;
+}
+button:hover{
+	background-color: #1f79ff;
+}
+
+.Economique, .Familial, .Romantique, .Animaux {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 27px;
+	font-weight: bold;
+   
+
+	background-color: white;
+	border: 2px solid #d9d9d9;
+
+	margin: 5px 20px 5px 0;
+}
+.Economique:hover, .Familial:hover, .Romantique:hover, .Animaux:hover {
+	background-color: #F2F2F2;
+	transition: ease-in-out 0.2s;
+    transform: scale(1.05);
+}
+.filtres{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: bolder;
+	
+	margin: 25px 0;
+}
+.Sous-Filtres{
+	margin-right: 20px;
+	font-weight: bolder;
+	
+}
+
+
+.filtres label{
+	margin-right: 20px;
+}
+.filtres input{
+	display:none;
+}
+.boxIcon{
+	background-color: #deebff;
+	color: #0065FC;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: 5px;
+	transform: translate3d(-3px, 0, 0);
+}
+/**Setup du Footer**/
