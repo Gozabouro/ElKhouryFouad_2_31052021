@@ -11,6 +11,8 @@
 <link href="CSS/style.css" rel="stylesheet">
 <!--Setting Viewport-->
 <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+          rel="stylesheet"/>
     </head>
     <body>
         <header>
@@ -20,7 +22,53 @@
 			<a href="#" class="sinscrire">S'inscrire</a>	
         </header>
         <main>
+<!--Setup de la barre de recherche avec filtres-->
 
+<section id="Search"> 
+
+	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+
+	<p>En plein centre ville ou en pleine nature</p>
+
+	<div class="SearchBar">
+		<div class="boxIconMap">
+			<i class="fas fa-map-marker-alt" id="iconeMap" alt="icone carte"></i>
+		</div>
+		<input type="search" id="site-search" name="q" aria-label="Search content" placeholder="Marseille, France">
+		<button type="button">Rechercher</button>
+		
+	</div>
+	<form method="post" class="SearchFiltres">
+		<div class="filtres">
+
+			<div class="Sous-Filtres">Filtres</div>
+
+			<div class="Economique">
+				<div class="boxIcon"><i class="fas fa-money-bill-wave-alt" alt="icone billet"></i></div>
+				<input type="checkbox" name="Économique" id="Économique">
+				<label for="Économique">Économique</label>
+			</div>
+
+			<div class="Familial">
+				<div class="boxIcon"><i class="fas fa-child" alt="icone enfant"></i></div>
+				<input type="checkbox" name="Familial" id="Familial">
+				<label for="Familial">Familial</label>
+			</div>
+
+			<div class="Romantique">
+				<div class="boxIcon"><i class="fas fa-heart" alt="icone coeur"></i></div>
+				<input type="checkbox" name="Romantique" id="Romantique">
+				<label for="Romantique">Romantique</label>
+			</div>
+
+			<div class="Animaux">
+				<div class="boxIcon"><i class="fas fa-dog" alt="icone chien"></i></div>
+				<input type="checkbox" name="animauxAutorisés" id="animauxAutorisés">
+				<label for="animauxAutorisés">Animaux autorisés</label>
+			</div>
+		</div>
+	</form>
+</section>
         </main>
         <footer>
 			<div class="footer-Content">
