@@ -239,6 +239,9 @@ button {
 button:hover{
 	background-color: #1f79ff;
 }
+.button_icon {
+	display: none;
+}
 
 .Economique, .Familial, .Romantique, .Animaux {
 	height: 50px;
@@ -319,6 +322,13 @@ button:hover{
 
 	.Sous-Filtres{
 		margin-bottom: 10px;
+	}
+	
+	#buttonSearch{
+		display: none;
+	}
+	.button_icon{
+		display: block;
 	}
 
 }
