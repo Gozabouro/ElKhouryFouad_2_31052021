@@ -228,4 +228,330 @@ button:hover{
 	margin-right: 5px;
 	transform: translate3d(-3px, 0, 0);
 }
+/* Note */
+.Note{
+	display: flex;
+	align-content: center;
+}
+.Note i {
+	margin-right: 15px;
+	border: 1px #F2F2F2 solid;
+	border-radius: 100%;
+	color: #0065FC;
+	padding: 5px 10px;
 
+}
+.Subnote {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	margin-right: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* CSS Hébergements */
+
+.blue{
+	color: #0065FC;
+}
+.grey{
+	color: #808080;
+}
+#hébergements-wrapper {
+	padding: 45px 45px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+} 
+
+#hébergement{
+    width: 66%;
+    background-color: #F2F2F2;
+    padding: 40px;
+    border-radius: 20px;
+}
+.hébergementsArticles article{
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0px 5px 16px #0000002e;
+	height: 200px;
+	font-size: 0.85rem;
+}
+.hébergementImage {
+		width: 100%;
+		height: 115px;
+		object-fit: cover;
+		border-radius: 18px 18px 0 0;
+}
+#hébergement h2 {
+		margin-bottom: 30px;
+		margin-top: 0;
+		font-size: 1.3rem;
+}
+.hébergementCarte{
+		display: flex;
+		flex-direction: column;
+}
+.hébergementsArticles{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+}
+.hébergementsTexte{
+	border-radius: 0 0 20px 20px;
+	padding: 10px;
+}
+.hébergementsTexte p, .hébergementsTexte h3, .hébergementsTexte div{
+	padding: 3px 0;
+	margin: 0;
+}
+.hébergementsArticles article:hover {
+    transform: scale(1.01);
+}
+
+.more{
+	margin-top: 40px;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+/* Media Queries Hébérgements */
+
+@media screen and (max-width: 1370px){
+	#hébergements-wrapper{
+		flex-direction: column-reverse;
+		padding-bottom: 0;
+	}
+	#hébergement{
+		width: 100%;
+		margin-top: 45px;
+	}
+
+}
+
+@media screen and (max-width: 940px){
+	.hébergementsArticles{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.hébergementsArticles{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		grid-row-gap: 12px;
+	}
+	#hébergements-wrapper{
+		padding: 0;
+	}
+	#hébergement{
+		padding-right:20px;
+		padding-left: 20px;
+		margin-top: 0;
+		background-color: white;
+	}
+}
+/* Mise en forme catégorie Plus populaires */
+
+#populaires{
+    width: 30%;
+    background-color: #F2F2F2;
+    padding: 40px 40px 5px 40px;
+    border-radius: 20px;
+}
+.lesPlusPopulaires{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.populairesImg{
+    background-color:white;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0px 5px 16px #0000002e;
+	margin-bottom: 30px;
+
+	font-size: 0.85rem;
+
+	height: 145px;
+	display: flex;
+	position: relative;
+}
+.populairesImage {
+    width: 40%;
+    height: 135px;
+    object-fit: cover;
+
+    border-radius: 18px 0 0 18px ;
+}
+.populairesTexte{
+	width: 60%;
+	margin-left: 10px;
+}
+#populaires article:hover {
+    transform: scale(1.01);
+}
+/* MEDIA QUERIES pour Populaires */
+
+@media screen and (max-width: 1370px){
+	#populaires{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#populaires{
+		padding: 30px 20px 5px 20px;
+		width: 100%;
+		border-radius: 0px;
+	}
+	.populairesCarte{
+		margin-bottom: 10px;
+	}
+}
+/* MISE EN PAGE DE ACTIVITES */
+#activites{
+    clear: both;
+	height: 100%;
+    padding: 0 45px;
+}
+
+#activites h1{
+	margin-left: 45px;
+	font-size: 1.3rem;
+}
+.activiteVP, .activiteFDP, .activiteIDF, .activitesPNDC, .activiteNDDLG, .activitePL {
+	position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 5px 16px #0000002e;
+   
+}
+.GridActivities{
+	margin: 20px 45px 45px 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 75px);
+    grid-gap: 30px;
+	grid-template-areas: 
+	"activiteVP activiteFDP activitesPNDC activiteNDDLG"
+	"activiteVP activiteFDP activitesPNDC activiteNDDLG"
+	"activiteVP activiteFDP activitesPNDC activitePL"
+	"activiteVP activiteIDF activitesPNDC activitePL"
+	"activiteVP activiteIDF activitesPNDC activitePL";
+}
+.activiteVP{
+	grid-area: activiteVP;
+}
+
+.activiteFDP{
+	grid-area: activiteFDP;
+}
+
+.activitesPNDC{
+	grid-area: activitesPNDC;
+}
+
+.activiteNDDLG{
+	grid-area: activiteNDDLG;
+}
+
+.activiteIDF{
+	grid-area: activiteIDF;
+}
+
+.activitePL{
+	grid-area: activitePL;
+}
+.GridActivities div{
+	width: 100%;
+	height: 100%;
+    background-color: white;
+	border-radius: 20px;
+}
+#activites img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px
+}
+.GridActivities p{
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	background-color: white;
+	border-radius: 0 0 20px 20px;
+	padding: 20px;
+	margin: 0;
+
+	font-weight: bold;
+	font-size: 1rem;
+
+}
+
+#activites a:hover {
+    transform: scale(1.01);
+}
+	
+	/* MEDIA QUERIES */
+
+@media screen and (max-width: 1300px){
+	.GridActivities {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 200px);
+		grid-gap: 30px;
+		grid-template-areas: 
+		"activiteVP activiteFDP activiteIDF"
+		"activitesPNDC activiteNDDLG activitePL";
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.GridActivities{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 200px);
+		grid-gap: 30px;
+		grid-template-areas: 
+		"activiteVP activiteFDP"
+		"activiteIDF activitesPNDC"
+		"activiteNDDLG activitePL";
+	}
+}
+
+@media screen and (max-width: 768px){
+	.GridActivities{
+		margin: 20px 20px 45px 20px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, 200px);
+		grid-gap: 12px;
+		grid-template-areas: 
+		"activiteVP"
+		"activiteFDP"
+		"activiteIDF"
+		"activitesPNDC"
+		"activiteNDDLG"
+		"activitePL";
+	}
+
+	#activites{
+		margin-bottom: 30px;
+	}
+
+	#activites h1{
+		margin-left: 20px;
+	}
+
+}
