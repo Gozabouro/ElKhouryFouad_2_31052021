@@ -57,6 +57,54 @@ header{
 	color: #0065fc;
 	font-weight: bold;
 }
+/* MEDIA QUERIES pour Header */
+
+@media screen and (max-width: 768px){
+	header{
+		margin: 0;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		grid-template-areas: 
+			"logo sinscrire"
+			"hébergements activités";
+		
+	}	
+	.logo{
+		grid-area: logo;
+		padding-left: 20px;
+	}
+	.navHébergements{
+		grid-area: hébergements;
+		padding-top: 0 !important;
+	}
+	.navActivités{
+		grid-area: activités;
+		padding-top: 0 !important;
+	}
+	.sinscrire{
+		grid-area: sinscrire;
+	}
+	.sinscrire{
+		padding-right: 20px;
+		text-align: right;
+		align-content: center;
+	}
+
+	.navHébergements, .navActivités{
+		border-bottom: 3px solid #F2F2F2;
+		padding: 35px;
+		flex: auto;
+		flex:1;
+	}
+	.navHébergements:hover, .navActivités:hover {
+		color: #0065fc;
+		border-top: none;
+		border-bottom: 3px solid #0065fc;
+		font-weight: bold;
+	}
+}
+
 
 /*Setup du footer*/
 footer{
@@ -158,11 +206,23 @@ footer li:hover {
 	border-radius: 15px 0 0 15px;
 	text-align: center;
 }
-
 .boxIconMap i{
 	height: 18px;
 	width: 18px;
 	margin-top: 14px;
+}
+.boxIcon{
+	background-color: #deebff;
+	color: #0065FC;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: 5px;
+	transform: translate3d(-3px, 0, 0);
 }
 button {
     border: 0; 
@@ -174,7 +234,6 @@ button {
 	font-size: 1rem;
 	font-weight: bold;
 	font-family: "Raleway";
-
 
 }
 button:hover{
@@ -221,20 +280,9 @@ button:hover{
 .filtres input{
 	display:none;
 }
-.boxIcon{
-	background-color: #deebff;
-	color: #0065FC;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-	margin-right: 5px;
-	transform: translate3d(-3px, 0, 0);
-}
-/* MEDIA QUERIES pour filtres et recherche */
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1100px){
 	.filtres{
@@ -260,7 +308,7 @@ button:hover{
 		margin-bottom: 30px;
 	}
 
-	.SearchBar .Loupe{
+	.SearchBar {
 		border-radius: 15px;
 	}
 
@@ -269,31 +317,14 @@ button:hover{
 		margin-right: 25px;
 	}
 
-	.SearchBar button{
-		display: none;
-	}
-	.SearchBar i{
-		width: 15px;
-		height: 15px;
-	}
-	.SearchBar .Loupe{
-		height: 100%;
-		padding: 15px;
-	
-		background-color: #1f79ff;
-		border-radius: 15px;
-	
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.Sous-Filtres{
 		margin-bottom: 10px;
 	}
 
 }
+
 /* Note */
+
 .Note{
 	display: flex;
 	align-content: center;
