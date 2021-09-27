@@ -4,12 +4,22 @@ OC-FrontEnd-Projet2 : Reservia. Outil de planification de vacances
 
 
 Contraintes techniques :
-Responsive. Adaptés aux tablettes, mobiles et ordis
+
+ - Responsive. Adaptés aux tablettes, mobiles et ordis
 
 
-Couleurs: #0065FC #DEEBFF #F2F2f2
+Couleurs utilisées : 
+ - #0065FC
+ - #DEEBFF 
+ - #F2F2f2
 
-Police : Raleway  Icônes : Font Awesome
+Police : 
+
+ - Raleway 
+ 
+Icônes : 
+
+ - Font Awesome
 
 
 Compatible avec Firefox et Chrome
