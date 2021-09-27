@@ -21,7 +21,9 @@ Icônes :
 
  - Font Awesome
 
+Compatibilités :
 
-Compatible avec Firefox et Chrome
+ - Firefox et Chrome
 
-/!\ Pas de pré-compilateur
+
+/!\ Pas de pré-compilateur pour css
